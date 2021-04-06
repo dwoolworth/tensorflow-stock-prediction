@@ -1,0 +1,8 @@
+pandas_datareader
+pandas
+numpy
+keras
+sklearn
+requests_cache
+tensorflow
+matplotlib
