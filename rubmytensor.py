@@ -53,10 +53,8 @@ dataset = data.values
 # Get the number of rows to train the model on
 training_data_len = math.ceil(len(dataset) * percent_of_data_to_train)
 
-# Scale the data so that each data point is a value between 0 and 1.  Honestly,
-# this isn't necessary and maybe even shouldn't be done here, but it's recommended
-# that any time you train a new model, you should scale the data.  Some moron 
-# wanted to make this more complicated.
+# Scale the data so that each data point is a value between 0 and 1.
+# Not sure this is really needed, but... whatever...
 scaler = MinMaxScaler(feature_range=(0,1))
 scaled_data = scaler.fit_transform(dataset)
 
